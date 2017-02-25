@@ -19,7 +19,7 @@ def crawl_joonggo():
     tr_list = html.select('form[name="ArticleList"] tr[align="center"] td[class="board-list"] span[class="aaa"] a')
 
     for tr in tr_list:
-        print(tr)
+        print(tr.text)
 
 
 if __name__ == '__main__':
